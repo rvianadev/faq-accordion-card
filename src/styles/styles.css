@@ -26,7 +26,43 @@
   --light-grayish-blue: hsl(240, 5%, 91%);
 }
 
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  background: rgb(100,98,231);
-  background: linear-gradient(0deg, rgba(100,98,231,1) 0%, rgba(175,104,234,1) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--soft-violet) 20%,
+    var(--soft-blue) 100%
+  );
+}
+
+main {
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper {
+  width: 64vw;
+  height: 66vh;
+
+  background-color: white;
+  border-radius: 30px;
+
+  display: flex;
+}
+
+.image-wrapper {
+  width: 50%;
+}
+
+.faq-wrapper {
+  width: 50%;
 }
