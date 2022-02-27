@@ -66,3 +66,21 @@ main {
 .faq-wrapper {
   width: 50%;
 }
+
+#box-desktop {
+  position: relative;
+  left: -93px;
+  top: 50px;
+}
+
+#woman-online-desktop {
+  position: relative;
+  left: -60px;
+  top: 50px;
+}
+
+#bg-pattern-desktop {
+  position: relative;
+  left: -346px;
+  top: -576px;
+}
