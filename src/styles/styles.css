@@ -61,6 +61,7 @@ main {
 
 .image-wrapper {
   width: 50%;
+  overflow: hidden;
 }
 
 .faq-wrapper {
@@ -68,19 +69,27 @@ main {
 }
 
 #box-desktop {
+  width: 300px;
+
   position: relative;
-  left: -93px;
-  top: 50px;
+  left: -94px;
+  top: 213px;
+  z-index: 1;
 }
 
 #woman-online-desktop {
+  width: 500px;
+
   position: relative;
   left: -60px;
-  top: 50px;
+  top: -154px;
+  z-index: 1;
 }
 
 #bg-pattern-desktop {
+  width: 1200px;
+
   position: relative;
-  left: -336px;
-  top: -556px;
+  left: -754px;
+  top: -1034px;
 }
