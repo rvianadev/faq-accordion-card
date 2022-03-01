@@ -69,26 +69,28 @@ main {
   width: 50%;
 }
 
-#box-desktop {
-  position: absolute;
-  left: 165px;
-  top: 352px;
+#bg-pattern-desktop {
+  width: 949px;
+
+  position: relative;
+  left: -538px;
+  top: -667px;
+}
+
+#woman-online-desktop {
+  width: 108%;
+
+  position: relative;
+  left: -88px;
+  top: 61px;
 
   z-index: 1;
 }
 
-#woman-online-desktop {
-  width: 110%;
+#box-desktop {
+  position: absolute;
+  left: 165px;
+  top: 340px;
 
-  position: relative;
-  left: -82px;
-  top: 75px;
-}
-
-#bg-pattern-desktop {
-  width: 900px;
-
-  position: relative;
-  left: -477px;
-  top: -659px;
+  z-index: 1;
 }
