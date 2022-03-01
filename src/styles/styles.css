@@ -61,6 +61,10 @@ main {
 
 .image-wrapper {
   width: 50%;
+<<<<<<< HEAD
+
+=======
+>>>>>>> b24e0ad3a01de84247e115a66c9f137ab068f173
   overflow: hidden;
 }
 
@@ -68,6 +72,32 @@ main {
   width: 50%;
 }
 
+<<<<<<< HEAD
+#bg-pattern-desktop {
+  width: 949px;
+
+  position: relative;
+  left: -538px;
+  top: -667px;
+}
+
+#woman-online-desktop {
+  width: 108%;
+
+  position: relative;
+  left: -88px;
+  top: 61px;
+
+  z-index: 1;
+}
+
+#box-desktop {
+  position: absolute;
+  left: 165px;
+  top: 340px;
+
+  z-index: 1;
+=======
 #box-desktop {
   width: 300px;
 
@@ -92,4 +122,5 @@ main {
   position: relative;
   left: -754px;
   top: -1034px;
+>>>>>>> b24e0ad3a01de84247e115a66c9f137ab068f173
 }
