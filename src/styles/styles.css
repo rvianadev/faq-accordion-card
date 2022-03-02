@@ -1,4 +1,4 @@
-@import './normalize.css';
+/* @import './normalize.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
 
 :root {
@@ -53,11 +53,18 @@ main {
 }
 
 h1 {
+  font-size: 2.8em;
+  padding-top: 20px;
 }
 
 hr {
-  width: 70%;
-  
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.5;
+
+  text-align: left;
+  margin-left: 0;
 }
 
 .card-wrapper {
@@ -81,7 +88,7 @@ hr {
 
   display: flex;
   flex-direction: column;
-  justify-items: left;
+  justify-content: flex-start;
 
   padding-left: 20px;
 }
@@ -112,21 +119,20 @@ hr {
   z-index: 1;
 }
 
-.icon-arrow {
-  width: 10px;
+.icon-arrow-down {
+  width: 12px;
   padding: 5px;
 
   cursor: pointer;
 }
 
-.icon-arrow-rotated {
-  width: 10px;
+.icon-arrow-up {
+  width: 12px;
   padding: 5px;
 
   cursor: pointer;
 
   transform: rotate(180deg);
-
 }
 
 .faq-question {
@@ -136,14 +142,25 @@ hr {
   justify-content: space-between;
   align-items: center;
 
-  width: 78%;
+  width: 80%;
 
-  margin-bottom: 10px;
+  padding: 10px 0;
 }
 
 .faq-answer {
+  width: 80%;
+
   font-size: 14px;
   display: none;
 
   margin-bottom: 10px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.strong-question {
+  font-weight: 700;
+}
+
+.divider {
+  width: 80%;
 }
