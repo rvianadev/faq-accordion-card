@@ -135,8 +135,13 @@ hr {
   transform: rotate(180deg);
 }
 
-.faq-question {
-  font-size: 1.2rem;
+.faq-question-1,
+.faq-question-2,
+.faq-question-3,
+.faq-question-4,
+.faq-question-5 {
+  font-size: 15px;
+  color: var(--very-dark-grayish-blue);
 
   display: flex;
   justify-content: space-between;
@@ -147,18 +152,19 @@ hr {
   padding: 10px 0;
 }
 
-.faq-answer {
+.hidden {
   width: 80%;
 
   font-size: 14px;
   display: none;
 
   margin-bottom: 10px;
-  color: var(--very-dark-grayish-blue);
+  color: var(--dark-grayish-blue);
 }
 
 .strong-question {
   font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
 }
 
 .divider {
