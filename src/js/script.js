@@ -1,17 +1,65 @@
-function showAnswer() {
-  var div = document.querySelector('.faq-answer');
+let arrow1 = document.querySelector('.icon-arrow-1');
+let arrow2 = document.querySelector('.icon-arrow-2');
+let arrow3 = document.querySelector('.icon-arrow-3');
+let arrow4 = document.querySelector('.icon-arrow-4');
+let arrow5 = document.querySelector('.icon-arrow-5');
 
-  div.style.display === 'block'
-    ? (div.style.display = 'none')
-    : (div.style.display = 'block');
+arrow1.addEventListener('click', () => {
+  let answer = document.querySelector('.faq-answer-1');
+  let question = document.querySelector('.faq-question-1');
 
-  arrow.classList.toggle('icon-arrow-up');
+  answer.style.display === 'block'
+    ? (answer.style.display = 'none')
+    : (answer.style.display = 'block');
+
+  arrow1.classList.toggle('icon-arrow-up');
   question.classList.toggle('strong-question');
+});
 
-  console.log('Fui clicado!');
-}
+arrow2.addEventListener('click', () => {
+  let answer = document.querySelector('.faq-answer-2');
+  let question = document.querySelector('.faq-question-2');
 
-var arrow = document.querySelector('.icon-arrow');
-var question = document.querySelector('span');
+  answer.style.display === 'block'
+    ? (answer.style.display = 'none')
+    : (answer.style.display = 'block');
 
-arrow.addEventListener('click', showAnswer);
+  arrow2.classList.toggle('icon-arrow-up');
+  question.classList.toggle('strong-question');
+});
+
+arrow3.addEventListener('click', () => {
+  let answer = document.querySelector('.faq-answer-3');
+  let question = document.querySelector('.faq-question-3');
+
+  answer.style.display === 'block'
+    ? (answer.style.display = 'none')
+    : (answer.style.display = 'block');
+
+  arrow3.classList.toggle('icon-arrow-up');
+  question.classList.toggle('strong-question');
+});
+
+arrow4.addEventListener('click', () => {
+  let answer = document.querySelector('.faq-answer-4');
+  let question = document.querySelector('.faq-question-4');
+
+  answer.style.display === 'block'
+    ? (answer.style.display = 'none')
+    : (answer.style.display = 'block');
+
+  arrow4.classList.toggle('icon-arrow-up');
+  question.classList.toggle('strong-question');
+});
+
+arrow5.addEventListener('click', () => {
+  let answer = document.querySelector('.faq-answer-5');
+  let question = document.querySelector('.faq-question-5');
+
+  answer.style.display === 'block'
+    ? (answer.style.display = 'none')
+    : (answer.style.display = 'block');
+
+  arrow5.classList.toggle('icon-arrow-up');
+  question.classList.toggle('strong-question');
+});
