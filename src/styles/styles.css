@@ -37,6 +37,8 @@ main {
 }
 
 body {
+  margin: 0px;
+
   background: linear-gradient(
     180deg,
     var(--soft-violet) 20%,
@@ -113,8 +115,8 @@ hr {
 
 #box-desktop {
   position: absolute;
-  left: 173px;
-  top: 340px;
+  left: 166px;
+  top: 331px;
 
   z-index: 1;
 }
