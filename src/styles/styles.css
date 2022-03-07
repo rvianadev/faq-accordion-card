@@ -55,7 +55,7 @@ main {
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 2.6em;
   padding-top: 35px;
 }
 
@@ -93,6 +93,7 @@ hr {
   justify-content: flex-start;
 
   padding-left: 20px;
+  padding-top: 100px;
 }
 
 #bg-pattern-desktop {
@@ -108,7 +109,7 @@ hr {
 
   position: relative;
   left: -88px;
-  top: 61px;
+  top: 72px;
 
   z-index: 1;
 }
@@ -116,7 +117,7 @@ hr {
 #box-desktop {
   position: absolute;
   left: 166px;
-  top: 331px;
+  top: 342px;
 
   z-index: 1;
 }
@@ -171,4 +172,60 @@ hr {
 
 .divider {
   width: 80%;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .card-wrapper {
+    width: 327px;
+    height: 535px;
+
+    position: absolute;
+    bottom: 85px;
+  }
+
+  .faq-wrapper {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .faq-question-1,
+  .faq-question-2,
+  .faq-question-3,
+  .faq-question-4,
+  .faq-question-5 {
+    font-size: 13px;
+    color: var(--very-dark-grayish-blue);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 10px 0;
+  }
+
+  #bg-pattern-desktop {
+    display: none;
+  }
+
+  #woman-online-desktop {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
+  .divider {
+    width: 100%;
+  }
 }
