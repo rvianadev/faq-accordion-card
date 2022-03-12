@@ -29,9 +29,6 @@
 html,
 body,
 main {
-  height: 100%;
-  width: 100%;
-
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 12px;
 }
@@ -44,6 +41,8 @@ body {
   align-items: center;
 
   background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+  background-size: cover;
+  min-height: 100vh;
 }
 
 main {
@@ -72,9 +71,6 @@ hr {
 }
 
 .card-wrapper {
-  /* width: 64vw;
-  height: 66vh; */
-
   max-width: 930px;
   max-height: 520px;
 
@@ -199,9 +195,9 @@ hr {
     position: absolute;
     left: 162px;
     top: 338px;
-  
+
     z-index: 1;
-  }  
+  }
 }
 
 @media (max-width: 375px) {
