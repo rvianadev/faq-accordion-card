@@ -1,3 +1,8 @@
+/* 
+  Thanks @catherineisonline (https://github.com/catherineisonline)
+  for code refact.
+*/
+
 const questions = document.querySelectorAll('.item');
 
 questions.forEach(function (item) {
