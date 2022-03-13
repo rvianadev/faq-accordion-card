@@ -34,8 +34,8 @@ main {
 }
 
 body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   overflow-y: scroll;
 
   margin: 0px;
@@ -76,7 +76,7 @@ hr {
 
 .card-wrapper {
   width: 930px;
-  /* max-height: 520px; */
+
   min-height: 520px;
 
   background-color: white;
@@ -86,7 +86,6 @@ hr {
 }
 
 .image-wrapper {
-  /* overflow-x: hidden; */
   position: relative;
   background-image: url('../images/bg-pattern-desktop.svg');
   background-repeat: no-repeat;
@@ -115,12 +114,6 @@ hr {
 #woman-online-desktop {
   width: 105%;
 
-  /* position: relative;
-  left: -90px;
-  top: 72px;
-
-  z-index: 1; */
-
   display: block;
   margin-top: 87px;
   margin-left: -80px;
@@ -131,25 +124,19 @@ hr {
 }
 
 #box-desktop {
-  /* position: absolute;
-  left: 722px;
-  top: 599px;
-
-  z-index: 1; */
-
   display: block;
   margin-top: -225px;
   margin-left: -92px;
 }
 
-.icon-arrow-down {
+.icon-arrow {
   width: 12px;
   padding: 5px;
 
   cursor: pointer;
 }
 
-.icon-arrow-up {
+.icon-arrow.rotate {
   width: 12px;
   padding: 5px;
 
@@ -158,13 +145,10 @@ hr {
   transform: rotate(180deg);
 }
 
-.faq-question-1,
-.faq-question-2,
-.faq-question-3,
-.faq-question-4,
-.faq-question-5 {
+.faq-question {
   font-size: 15px;
   color: var(--very-dark-grayish-blue);
+  cursor: pointer;
 
   display: flex;
   justify-content: space-between;
@@ -175,7 +159,11 @@ hr {
   padding: 10px 0;
 }
 
-.hidden {
+.faq-question:hover {
+  color: var(--soft-red);
+}
+
+.faq-answer {
   width: 80%;
 
   font-size: 14px;
@@ -185,7 +173,11 @@ hr {
   color: var(--dark-grayish-blue);
 }
 
-.strong-question {
+.faq-answer.show {
+  display: block;
+}
+
+.faq-question.active {
   font-weight: 700;
   color: var(--very-dark-desaturated-blue);
 }
@@ -194,11 +186,9 @@ hr {
   width: 80%;
 }
 
-.show-mobile {
-  display: none;
-}
-
+/* ************ */
 /* RESPONSIVITY */
+/* ************ */
 
 @media (min-width: 1440px) {
   .image-wrapper {
@@ -226,11 +216,7 @@ hr {
     justify-content: center;
   }
 
-  .faq-question-1,
-  .faq-question-2,
-  .faq-question-3,
-  .faq-question-4,
-  .faq-question-5 {
+  .faq-question {
     font-size: 13px;
     color: var(--very-dark-grayish-blue);
 
